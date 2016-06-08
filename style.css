@@ -1,0 +1,77 @@
+/*
+-general
+-Colors
+-parallax
+-Media
+*/
+/*general */
+body {
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 2em;
+}
+/*Colors*/
+
+#group1 .layer-back {
+	background: #355064;
+	
+}
+
+#group1 .layer-base {
+	background: #9891A9;
+}
+
+#group2 .layer-back {
+	background: #2A393D;
+	
+}
+
+#group2 .layer-base {
+	background: #FCE5CC;
+}
+
+
+/*Parallax */
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/*used to control the speed of scoll*/ 
+.layer-base {
+  transform: translateZ(0);
+
+}
+/*used to control the speed of scoll*/ 
+.layer-back {
+  transform: translateZ(-1px);
+  transform: translateZ(-1px) scale(2);
+
+
+}
+
+.parallax-group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+
+
+
+
+@media (min-width: 768px)  {
+	
+}
+
